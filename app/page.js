@@ -18,7 +18,7 @@ export default function SignIn() {
     const pass = formData.get('pass');        
 
     const payload = { nikadmin, pass }; 
-    console.log('Mengirim ke http://localhost:8080/api/user/login dengan data:', payload);
+    console.log('Mengirim ke http://192.168.1.4:8080/api/user/login dengan data:', payload);
 
     try {
       const response = await fetch('http://localhost:8080/api/user/login', {
