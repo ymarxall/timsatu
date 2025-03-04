@@ -194,7 +194,7 @@ export default function SignUp() {
                 'p',
                 null,
                 'Sudah punya akun? ',
-                createElement(Link, { href: '/authentication/sign-in', className: 'text-primary' }, 'Login di sini')
+                createElement(Link, { href: '/', className: 'text-primary' }, 'Login di sini')
               )
             )
           )

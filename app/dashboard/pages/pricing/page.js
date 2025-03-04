@@ -6,11 +6,6 @@ import { Col, Row, Container } from 'react-bootstrap';
 // import sub components
 import { PricingCard, PageHeading, FeatureLeftTopIcon } from 'widgets'
 
-// import data files
-import { standard, multisite, extended } from 'data/pricing/PricingPlansData';
-import FAQsData from 'data/pricing/FAQsData';
-import FeaturesData from 'data/pricing/FeaturesData';
-
 const Pricing = () => {
   return (
     <Container fluid className="p-6">
@@ -31,18 +26,7 @@ const Pricing = () => {
                   </div>
                 </div>
               </Col>
-              <Col xl={4} lg={6} md={12} xs={12} className="mb-3">
-                {/* Standard Pricing Card */}
-                <PricingCard content={standard} />
-              </Col>
-              <Col xl={4} lg={6} md={12} xs={12} className="mb-3">
-                {/* Multisite Pricing Card */}
-                <PricingCard content={multisite} />
-              </Col>
-              <Col xl={4} lg={6} md={12} xs={12} className="mb-3">
-                {/* Extended Pricing Card */}
-                <PricingCard content={extended} />
-              </Col>
+
             </Row>
             <Row className="mb-10">
               <Col lg={12} md={12} xs={12}>
@@ -53,31 +37,31 @@ const Pricing = () => {
                 </div>
               </Col>
               {/* Features */}
-              {FeaturesData.map((item, index) => {
+              {/* {FeaturesData.map((item, index) => {
                 return (
                   <Col lg={4} md={6} xs={12} key={index}>
                     <FeatureLeftTopIcon item={item} />
                   </Col>
                 )
-              })}
+              })} */}
             </Row>
             <Row>
               {/* FAQs Heading */}
-              <Col xs={12}>
+              {/* <Col xs={12}>
                 <div className="mb-6">
                   <h2 className="mb-0">Frequently Asked Questions</h2>
                 </div>
-              </Col>
+              </Col> */}
 
               {/* FAQs List */}
-              {FAQsData.map((item, index) => {
+              {/* {FAQsData.map((item, index) => {
                 return (
                   <Col lg={4} md={6} sm={12} className="mb-3" key={index}>
                     <h4>{item.question}</h4>
                     <p>{item.answer}</p>
                   </Col>
                 );
-              })}
+              })} */}
             </Row>
           </Col>
         </Row>
